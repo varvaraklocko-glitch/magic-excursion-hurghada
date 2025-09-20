@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magic Excursions Hurghada — Tours & Prices</title>
+  <meta name="description" content="Magic Excursions Hurghada — Red Sea tours, islands, dolphin trips, safari, Luxor & Cairo. Book on WhatsApp." />
+  <style>
+    :root{--sea:#0fb2a6;--deep:#027a74;--accent:#ffd166;--bg:#f6fbfd;--card:#ffffff;--muted:#6b7b86}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; margin:0; background:linear-gradient(180deg,#e8fbff 0%, #f6fbfd 100%)}
+    header{background:linear-gradient(180deg,var(--sea),var(--deep)); color:white; padding:28px 16px; text-align:center}
+    .site-wrap{max-width:1100px;margin:0 auto;padding:22px}
+    .brand{font-size:28px;font-weight:700;letter-spacing:.6px}
+    .slogan{opacity:.95;margin-top:6px}
+    .top-actions{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:14px}
+    .btn{background:white;color:var(--deep);padding:10px 18px;border-radius:28px;font-weight:600;text-decoration:none}
+    .btn-whatsapp{background:#16a34a;color:white;display:inline-flex;gap:8px;align-items:center;padding:10px 18px;border-radius:28px;text-decoration:none}
+    .lang-toggle{background:rgba(255,255,255,0.12);padding:6px 10px;border-radius:8px;color:white;margin-left:6px}
+    main{padding:28px 16px}
+    h2{font-size:28px;margin:24px 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border-radius:10px;padding:12px;box-shadow:0 6px 18px rgba(2,42,52,0.06);display:flex;flex-direction:column}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    .card-title{font-weight:700;margin-top:10px}
+    .price{margin-top:auto;font-weight:800;color:var(--deep);font-size:18px}
+    footer{background:#fff;padding:18px 16px;margin-top:28px;border-top:1px solid #e6f3f4}
+    .contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+    .categories{display:flex;flex-wrap:wrap;gap:10px}
+    .note{color:var(--muted);font-size:13px;margin-top:12px}
+    @media(min-width:700px){header{padding:36px} .brand{font-size:36px}}
+    /* simple table for full price list */
+    .price-table{width:100%;border-collapse:collapse;margin-top:18px}
+    .price-table td{padding:8px 6px;border-bottom:1px dashed #eef7f7}
+    .cat-title{font-weight:700;color:var(--deep)}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-wrap">
+      <div class="brand">Magic Excursions Hurghada</div>
+      <div class="slogan">Your unforgettable Red Sea adventure starts here</div>
+      <div class="top-actions">
+        <a class="btn-whatsapp" id="whatsappButton" href="https://wa.me/201220118084" target="_blank">📲 Book on WhatsApp</a>
+        <div class="lang-toggle" id="langToggle">EN | RU</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-wrap">
+    <section id="about">
+      <h2 id="aboutTitle">About Us</h2>
+      <p id="aboutText">At Magic Excursions Hurghada, we're dedicated to providing exceptional travel experiences in the Red Sea. With a strong commitment to customer satisfaction, our team of experts prioritizes safety, comfort, and unforgettable adventures.</p>
+    </section>
+
+    <section id="excursions">
+      <h2 id="excursionsTitle">Excursions & Prices</h2>
+      <div id="cards" class="grid"></div>
+
+      <h2 id="fullListTitle">Full Price List</h2>
+      <table class="price-table" id="priceTable"></table>
+    </section>
+
+    <section id="gallery">
+      <h2 id="galleryTitle">Gallery</h2>
+      <div class="grid" id="galleryGrid">
+        <!-- placeholders: replace images by your photos -->
+        <div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a" alt="sea"><div class="card-title">Sunset Over Red Sea</div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="boat"><div class="card-title">Private Boat Trip</div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="dolphin"><div class="card-title">Dolphin Moments</div></div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2 id="reviewsTitle">Reviews</h2>
+      <div class="card small">"Best day ever! The team was amazing and everything was organized perfectly." — Anna</div>
+      <div class="card small" style="margin-top:8px">"Dolphins were so close, the kids loved it. Highly recommended!" — Michael</div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="site-wrap contact">
+      <div>
+        <div style="font-weight:800">Magic Excursions Hurghada</div>
+        <div class="small">Facebook: Excursion Hurghada</div>
+        <div class="note">Book now: WhatsApp +20 122 011 8084</div>
+      </div>
+      <div class="categories small">Icons: 🌊 🐬 🏝️ 🏜️</div>
+    </div>
+  </footer>
+
+  <script>
+    // Data structure: tours with translations (en/ru) and prices
+    const tours = [
+      {category:'ISLANDS', items:[
+        {id:'orange_bay', en:'Orange Bay', ru:'Orange Bay', price:20},
+        {id:'orange_vip', en:'Orange Bay (VIP)', ru:'Orange Bay (VIP)', price:25},
+        {id:'hula', en:'Hula Hula', ru:'Hula Hula', price:20},
+        {id:'hula_vip', en:'Hula Hula (VIP)', ru:'Hula Hula (VIP)', price:25},
+        {id:'paradise', en:'Paradise Island', ru:'Paradise Island', price:40},
+        {id:'mahmya', en:'Mahmya Island', ru:'Mahmya Island', price:85},
+        {id:'eden', en:'Eden Island', ru:'Eden Island', price:70},
+        {id:'utopia', en:'Utopia Island', ru:'Utopia Island', price:60},
+        {id:'magawish', en:'Magawish Island', ru:'Magawish Island', price:25},
+        {id:'nemo', en:'Nemo Island', ru:'Nemo Island', price:25}
+      ]},
+      {category:'SEA TRIPS & ACTIVITIES', items:[
+        {id:'glass', en:'Glass-bottomed boat (Seascope)', ru:'Glass-bottomed boat (Seascope)', price:15},
+        {id:'parasailing', en:'Parasailing', ru:'Parasailing', price:18},
+        {id:'dolphin_house', en:'Dolphin House', ru:'Dolphin House', price:20},
+        {id:'private_boat', en:'Private / Speedboat (4h)', ru:'Private / Speedboat (4h)', price:150}
+      ]},
+      {category:'DIVING & DOLPHIN EXPERIENCES', items:[
+        {id:'intro_diving', en:'Intro Diving', ru:'Intro Diving', price:25},
+        {id:'orange_plus_diving', en:'Orange Bay + Intro Diving', ru:'Orange Bay + Intro Diving', price:30},
+        {id:'hula_plus_diving', en:'Hula Hula + Intro Diving', ru:'Hula Hula + Intro Diving', price:30},
+        {id:'pro_diving', en:'Professional Diving', ru:'Professional Diving', price:30},
+        {id:'swim_dolphins', en:'Swimming with Dolphins', ru:'Swimming with Dolphins', price:55},
+        {id:'dolphin_show', en:'Dolphin Show', ru:'Dolphin Show', price:18},
+        {id:'dolphin_photo', en:'Dolphin Photo Session', ru:'Dolphin Photo Session', price:50}
+      ]},
+      {category:'SAFARI & ADVENTURE', items:[
+        {id:'super_elgouna', en:'Super El Gouna', ru:'Super El Gouna', price:45},
+        {id:'super_safari', en:'Super Safari', ru:'Super Safari', price:20},
+        {id:'moto_safari', en:'Moto Safari 3h', ru:'Moto Safari 3h', price:20},
+        {id:'family_safari', en:'Family Safari', ru:'Family Safari', price:19},
+        {id:'moto_with_show', en:'Moto Safari + dinner + show', ru:'Moto Safari + dinner + show', price:22},
+        {id:'camel', en:'Camel Ride (2h)', ru:'Camel Ride (2h)', price:25},
+        {id:'horse', en:'Horse Ride (2h)', ru:'Horse Ride (2h)', price:25}
+      ]},
+      {category:'CITY TOURS — CAIRO & LUXOR', items:[
+        {id:'cairo_bus', en:'Cairo by coach', ru:'Cairo by coach', price:55},
+        {id:'cairo_vip', en:'Cairo VIP by minibus', ru:'Cairo VIP by minibus', price:65},
+        {id:'super_cairo', en:'Super Cairo (Friday only)', ru:'Super Cairo (Friday only)', price:70},
+        {id:'cairo_plane', en:'Cairo by plane', ru:'Cairo by plane', price:270},
+        {id:'luxor_bus', en:'Luxor by coach', ru:'Luxor by coach', price:60},
+        {id:'luxor_vip', en:'Luxor VIP by minibus', ru:'Luxor VIP by minibus', price:70},
+        {id:'luxor_balloon', en:'Luxor + hot air balloon', ru:'Luxor + hot air balloon', price:240}
+      ]},
+      {category:'SHOWS, PARKS & ATTRACTIONS', items:[
+        {id:'grand_aquarium', en:'Grand Aquarium', ru:'Grand Aquarium', price:38},
+        {id:'mini_egypt', en:'Mini Egypt', ru:'Mini Egypt', price:30},
+        {id:'waterpark', en:'Waterpark Day', ru:'Waterpark Day', price:55},
+        {id:'sindbad', en:'Sindbad submarine (underwater boat)', ru:'Sindbad submarine (underwater boat)', price:65},
+        {id:'spa', en:'Spa day', ru:'Spa day', price:25}
+      ]}
+    ];
+
+    // translations
+    const translations = {
+      en: {
+        aboutTitle:'About Us',
+        aboutText: `At Magic Excursions Hurghada, we're dedicated to providing exceptional travel experiences in the Red Sea. With a strong commitment to customer satisfaction, our team of experts prioritizes safety, comfort, and unforgettable adventures.`,
+        excursionsTitle:'Excursions & Prices',
+        fullListTitle:'Full Price List',
+        galleryTitle:'Gallery',
+        reviewsTitle:'Reviews'
+      },
+      ru: {
+        aboutTitle:'О нас',
+        aboutText:`Magic Excursions Hurghada — ваш надежный партнер по незабываемым экскурсиям на Красном море. Наша команда заботится о безопасности, комфорте и солнечном настроении во время каждого тура.`,
+        excursionsTitle:'Экскурсии и цены',
+        fullListTitle:'Полный прайс-лист',
+        galleryTitle:'Галерея',
+        reviewsTitle:'Отзывы'
+      }
+    };
+
+    // initial language
+    let lang = 'en';
+
+    function renderCards(){
+      const container = document.getElementById('cards');
+      container.innerHTML = '';
+      // show a few highlighted tours as cards (first item from each category)
+      tours.forEach(group=>{
+        if(!group.items || group.items.length===0) return;
+        const item = group.items[0];
+        const card = document.createElement('div'); card.className='card';
+        const img = document.createElement('img');
+        img.alt = item.en; img.src = `https://source.unsplash.com/collection/190727/800x600?sig=${Math.floor(Math.random()*1000)}`;
+        const title = document.createElement('div'); title.className='card-title'; title.textContent = item[lang];
+        const price = document.createElement('div'); price.className='price'; price.textContent = `$${item.price}`;
+        const btn = document.createElement('a'); btn.className='btn'; btn.textContent = (lang==='en'?'Book on WhatsApp':'Забронировать в WhatsApp');
+        btn.href = 'https://wa.me/201220118084'; btn.target='_blank';
+        card.appendChild(img); card.appendChild(title); card.appendChild(price); card.appendChild(btn);
+        container.appendChild(card);
+      });
+    }
+
+    function renderPriceList(){
+      const table = document.getElementById('priceTable'); table.innerHTML='';
+      tours.forEach(group=>{
+        // category row
+        const trCat = document.createElement('tr');
+        const tdCat = document.createElement('td'); tdCat.colSpan=2; tdCat.className='cat-title'; tdCat.textContent = group.category; trCat.appendChild(tdCat);
+        table.appendChild(trCat);
+        group.items.forEach(it=>{
+          const tr = document.createElement('tr');
+          const tdName = document.createElement('td'); tdName.textContent = it[lang];
+          const tdPrice = document.createElement('td'); tdPrice.style.textAlign='right'; tdPrice.textContent = '$' + it.price;
+          tr.appendChild(tdName); tr.appendChild(tdPrice);
+          table.appendChild(tr);
+        });
+      });
+    }
+
+    function renderTranslations(){
+      document.getElementById('aboutTitle').textContent = translations[lang].aboutTitle;
+      document.getElementById('aboutText').textContent = translations[lang].aboutText;
+      document.getElementById('excursionsTitle').textContent = translations[lang].excursionsTitle;
+      document.getElementById('fullListTitle').textContent = translations[lang].fullListTitle;
+      document.getElementById('galleryTitle').textContent = translations[lang].galleryTitle;
+      document.getElementById('reviewsTitle').textContent = translations[lang].reviewsTitle;
+      // update cards and price list
+      renderCards(); renderPriceList();
+    }
+
+    document.getElementById('langToggle').addEventListener('click',()=>{
+      lang = (lang==='en'?'ru':'en');
+      document.getElementById('langToggle').textContent = (lang==='en'?'EN | RU':'EN | RU');
+      renderTranslations();
+    });
+
+    // initial render
+    renderTranslations();
+
+    // helpful instructions in console for you
+    console.log('Magic Excursions Hurghada — site loaded. To edit tours/prices, open index.html and edit the `tours` array in the script.');
+  </script>
+</body>
+</html>
